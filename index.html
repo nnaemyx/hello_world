@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="view"></p>
+
+        <script>
+            var word = "hello world";
+            var myVar = document.getElementById('view');
+            
+            if (myVar) {
+                console.log(true);
+            } else {console.log(false);}
+            console.log(word);
+            myVar.innerHTML = word;
+
+            window.setInterval(function(){myVar += 'hello world'; console.log(myVar);}, 1000);
+        </script>
+    </body>
+</html>
